@@ -14,7 +14,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 install_requires = [
     "jsonschema",
     "numpy",
-    "onnxruntime",
+    "onnxruntime-gpu",
     "opencv-python-headless",
     "pillow",
     "pooch",
@@ -37,7 +37,7 @@ extras_require = {
         "twine",
         "wheel",
     ],
-    "gpu": ["onnxruntime-gpu"],
+    "cpu": ["onnxruntime"],
     "cli": [
         "aiohttp",
         "asyncer",
